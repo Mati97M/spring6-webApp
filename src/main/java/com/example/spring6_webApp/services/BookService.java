@@ -1,7 +1,7 @@
 package com.example.spring6_webApp.services;
 
-import com.example.spring6_webApp.domain.Book;
+import com.example.spring6_webApp.dto.BookDTO;
 
 public interface BookService {
-    Iterable<Book> findAll();
+    Iterable<BookDTO> findAll();
 }

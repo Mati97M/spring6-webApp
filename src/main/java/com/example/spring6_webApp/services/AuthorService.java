@@ -1,7 +1,7 @@
 package com.example.spring6_webApp.services;
 
-import com.example.spring6_webApp.domain.Author;
+import com.example.spring6_webApp.dto.AuthorDTO;
 
 public interface AuthorService {
-    Iterable<Author> findAll();
+    Iterable<AuthorDTO> findAll();
 }

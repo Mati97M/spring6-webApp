@@ -1,12 +1,12 @@
 package com.example.spring6_webApp.controllers;
 
 import com.example.spring6_webApp.services.BookService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Controller
 public class BookController {
     private final BookService bookService;
