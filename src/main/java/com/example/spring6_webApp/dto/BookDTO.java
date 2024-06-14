@@ -1,5 +1,6 @@
 package com.example.spring6_webApp.dto;
 
+import com.example.spring6_webApp.domain.Publisher;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,4 +12,5 @@ public final class BookDTO {
     private Long id;
     private String title;
     private String isbn;
+    private Publisher publisher;
 }

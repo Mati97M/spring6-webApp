@@ -12,13 +12,14 @@ import java.util.ArrayList;
 @Service
 public class BookServiceImpl implements BookService {
     private final BookRepository bookRepository;
+    private final BookMapper bookMapper;
 
     @Override
     public Iterable<BookDTO> findAll() {
         ArrayList<BookDTO> bookDTOs = new ArrayList<>();
         bookRepository.findAll()
                 .forEach(book -> bookDTOs.add(
-                        BookMapper.INSTANCE.booktoBookDTO(book))
+                        bookMapper.booktoBookDTO(book))
                 );
         return bookDTOs;
     }

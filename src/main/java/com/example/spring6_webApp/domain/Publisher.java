@@ -9,11 +9,13 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+@ToString(onlyExplicitlyIncluded = true)
 @Getter
 @Setter
 @Table(name = "publishers")
@@ -22,6 +24,7 @@ public class Publisher {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @ToString.Include
     private String name;
     private String address;
     private String city;
