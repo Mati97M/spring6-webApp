@@ -19,7 +19,7 @@ public class BookServiceImpl implements BookService {
     public Iterable<BookDTO> findAll() {
         Iterable<Book> books = bookRepository.findAll();
         return StreamSupport.stream(books.spliterator(), false)
-                .map(bookMapper::booktoBookDTO)
+                .map(bookMapper::bookToBookDTO)
                 .toList();
     }
 }
