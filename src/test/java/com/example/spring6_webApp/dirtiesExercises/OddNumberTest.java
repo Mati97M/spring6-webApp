@@ -26,7 +26,7 @@ class OddNumberTest {
 
     @Test
     void getNumberInitiallyReturns1Test() {
-        assertEquals(oddNumber.getNumber(), 1);
+        assertEquals(1, oddNumber.getNumber());
     }
 
     @DirtiesContext
